@@ -1,0 +1,6 @@
+logs
+.vscode
+.github
+.typings
+node_modules
+test
