@@ -41,3 +41,20 @@ volumes:
 修改本项目代码后需要更新镜像然后再重启：
 
 - `docker-compose up backend`
+
+全部启动好了访问`http://localhost:7001/`看到“启动 covid19 全球数据查询服务成功”说明启动成功，之后再访问`POST /api/v1/covid19/action-refresh/`拉取最新疫情数据即可。
+
+### APIS
+
+- `POST /api/v1/covid19/action-refresh/`
+- `GET /api/v1/covid19/`
+  - page: 页码
+  - limit: 每页数量
+  - area_level: 1-国家 2-省 3-市
+  - parent_id: 所属地区 id
+- `GET /api/v1/covid19/:id`
+- `GET /api/v1/areas/`
+  - page: 页码
+  - limit: 每页数量
+  - area_level: 1-国家 2-省 3-市
+  - parent_id: 所属地区 id
