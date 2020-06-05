@@ -38,6 +38,7 @@ module.exports = (appInfo) => {
   };
 
   config.urls = {
+    // https://wp.m.163.com/163/page/news/virus_report/index.html?spss=virus_nation
     fetchCovid19: 'https://c.m.163.com/ug/api/wuhan/app/data/list-total',
   };
 
